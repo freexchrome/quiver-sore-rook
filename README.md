@@ -28,3 +28,22 @@ ___Want a minimal version of this project to build your own website? Check out [
 
 - Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
 - Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+
+## Git
+or create a new repository on the command line
+```
+echo "# quiver-sore-rook" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/freexchrome/quiver-sore-rook.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+
+```
+git remote add origin https://github.com/freexchrome/quiver-sore-rook.git
+git branch -M main
+git push -u origin main
