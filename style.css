@@ -8,4 +8,16 @@ body{
 .wrapper{
   width: 1170px;
   margin: 0 auto;
+} 
+header{
+  height: 100px;
+  backgroud: #262626;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+.logo{
+  width: 30%;
+  float: left;
+  lin-height: 100px;
 }
