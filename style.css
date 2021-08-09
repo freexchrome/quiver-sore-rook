@@ -50,6 +50,12 @@ nav a{
   background-size: cover;
   background-postion: center center;
 }
-.contemt-area{
+.content-area{
+  width:100%;
+  position: relative;
+  top: 450px;
+  background: #262626;
+  height: 1500px;
+  color: #fff;
   
 }
