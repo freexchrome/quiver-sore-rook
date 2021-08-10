@@ -58,3 +58,15 @@ nav a {
   height: 1500px;
   color: #fff;
 }
+.content-area h2{
+  font-family: bignoodletitling;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
+}
+.content-area p{
+  padding: 2% 0;
+  font-family: open sans condensed;
+  line-height: 30px;
+}
