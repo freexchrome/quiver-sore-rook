@@ -69,7 +69,17 @@ img {
 .navbar {
   border: 0;
   margin-bottom: 0;
+  }
+.nav-area.sticky_navigation{
+  background: #
 }
+
+
+
+
+
+
+
 .navbar-brand {
   padding: 15px 0;
   text-transform: uppercase;
