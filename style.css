@@ -1,7 +1,8 @@
-html, body{
+html,
+body {
   height: 100%;
 }
-body{
+body {
   font-family: poppins;
   width: 100%;
   height: 100%;
@@ -10,60 +11,66 @@ body{
   color: #333;
   font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
   font-weight: 600;
 }
-p{
+p {
   letter-spacing: 0;
   line-height: 1.8;
 }
-a{
+a {
   text-decoration: none;
   transition: all 0.4s;
 }
-a:focus{
-  outline: none:
+a:focus {
+  outline: none;
   text-decoration: none;
 }
-ul, li{
+ul,
+li {
   margin: 0;
   padding: 0;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
-.section-padding{
+.section-padding {
   padding: 80px 0;
 }
-.section-header{
+.section-header {
   margin-bottom: 60px;
   text-align: center;
 }
-.section-header h2:before{
-  content:'{';
+.section-header h2:before {
+  content: "{";
   padding-right: 15px;
 }
-.section-header h2:after{
-  content: '}';
+.section-header h2:after {
+  content: "}";
   padding-left: 15px;
 }
 
 /*navbar*/
 
-.nav-area{
+.nav-area {
   height: 65px;
 }
-.main-menu{
+.main-menu {
   transition: all 0.4s ease-out;
-  margin-top: 10px
+  margin-top: 10px;
 }
-.navbar{
+.navbar {
   border: 0;
   margin-bottom: 0;
 }
-.navbar-brand{
+.navbar-brand {
   padding: 15px 0;
   text-transform: uppercase;
   font-size: 25px;
@@ -71,9 +78,39 @@ img{
   color: #262626;
   font-weight: 800;
 }
-.navbar-brand:focus, .navbar-brand:hover{
-  text-decoration: none
+.navbar-brand:focus,
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #262626;
 }
+.narbar-right li {
+  display: inline-block;
+  float: none;
+}
+.navbar-right li a {
+  color: #262626;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navbar-right li.active a{
+  font-weight: bold;
+  color: #262626;
+}
+.nav>li>a:hover, .nav>li>a:active, .nav>li>a:focus{
+  background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
