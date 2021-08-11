@@ -265,9 +265,19 @@
   
   <script>
   
-      $(window).on('scroll', function
+      $(window).on('scroll', function(){
+        var menu_area = $('nav-area');
+        if($(window).scrollTop() > 200) {
+          menu_area.addClass('sticky_navigation');
+      }else{ menu_area.removeClass('sticky_navigation');
+           }
+      });
   
-  
+      $('a.smooth-menu').on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate
+      }
   
   
   </script>
