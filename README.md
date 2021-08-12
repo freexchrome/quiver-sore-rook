@@ -11,7 +11,7 @@ captured these beauties.
 
 ← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
 
-← `index.html`:
+← `index.html`: 
 
 ← `about.html`:
 
@@ -24,6 +24,23 @@ captured these beauties.
 ← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
 
 Open each file and check out the comments (in gray) for more info.
+
+```
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/freexchrome/quiver-sore-rook.git
+git push -u origin main
+```
+
+
+
+
+
+
+
+
+
 
 ## Git
 
