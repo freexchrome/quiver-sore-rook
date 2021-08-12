@@ -214,12 +214,33 @@ img {
 /*footer*/
 .footer{
   background: #262626;
-  
+  padding: 30px 0;
+  color: #fff;
+  text-align: center;
 }
 
+/*responsive*/
 
-
-
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .section-padding{
+    padding: 35px 0;
+  }
+  .navbar-nav{
+    padding: 15px 0;
+  }
+  .navbar-brand{
+    padding: 20px 0;
+  }
+  .navbar-nav > li > a{
+    line-height: 0;
+  }
+  .nav > li > a{
+    padding: 10px 8px;
+ }
+  #about{
+    text-align: center;
+}
+}
 
 
 
