@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="nav-area navbar-fixed-top">
+    <header class="nav-area">
       <div class="container">
         <div class="main-menu">
           <nav class="navbar ">
@@ -59,192 +59,46 @@
         </div>
       </div>
     </header>
-
-    <div id="home">
-      <div class="banner-area" id="slider-area">
-        <div class="banner-table">
-          <div class="banner-table-cell">
-            <div class="welcome-text">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12"></div>
-                </div>
-              </div>
+    <main>
+      <div id="home" class="text-center mt-5">
+        <h1>
+          Welcome to My Website Project
+        </h1>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>All Right Reserverd by My Website</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="about section-pedding" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header">
-              <h2>About Me</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <div class="about-img">
-              <img
-                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2FDSC_0074.JPG?v=1628739912289"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-md-8 col-sm-12">
-            <div class="about text">
-              <p>
-                Ever since I was a little kid photography always played a role
-                in my life. Photography helps me capture the way I see things
-                through my eyes.I have always been Amazed by the many beautiful
-                things I see just walking around my neighborhood. So these 6
-                images that I've picked are some of my favorites because just
-                walking around where I live I captured these beauties.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <div class="services-area section-padding" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header">
-              <h2>My Work</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="single-service"></div>
-            <h2>Descriptions</h2>
-            <p>
-              These 6 images below are images I took walking around the city.
-              When I first saw them I thought wow what an amazing place to take
-              this amazing shot. With some of them the way the lighting was
-              hitting that object in the picture really helped that object
-              really stand out . And with the others just the positioning of
-              things looked like it would make an amazing picture.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script>
 
-    <div class="portfolio section-padding" id="profolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header">
-              <h2>One of my favorite works</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-5.jpg?v=1628645965284"
-              alt=""
-            />
-            <img
-              src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-4.jpg?v=1628645968531"
-              alt=""
-            />
-            <img
-              src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-3.jpg?v=1628645973052"
-              alt=""
-            />
-            <img
-              src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2FIMG_0146.jpeg?v=1628740729118"
-              alt=""
-            />
-            <img
-              src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-1.jpg?v=1628645982839"
-              alt=""
-            />
-            <img
-              src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed.jpg?v=1628645989021"
-              alt=""
-            />
-          </div>
-        </div>
+      $(window).on('scroll', function(){
+        var menu_area = $('nav-area');
+        if($(window).scrollTop() > 200) {
+          menu_area.addClass('sticky_navigation');
+      }else{ menu_area.removeClass('sticky_navigation');
+           }
+      });
 
-        <div class="contact section-padding" id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="section-header">
-                  <h2>Contact Me</h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
-                <div class="single-contact">
-                  <form action="" class="form-horizontal">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter Your Name"
-                    />
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Enter Your Email"
-                    />
-                    <textarea
-                      class="form-control"
-                      placeholder="Enter Your Query"
-                      rows="7"
-                    ></textarea>
-                    <button type="submit" class="btn btn=primary">
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <p>All Right Reserverd by My Website</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      $('a.smooth-menu').on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 50
+        }, 1000);
+        })
+      }
+    </script>
   </body>
 </html>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script>
-
-  $(window).on('scroll', function(){
-    var menu_area = $('nav-area');
-    if($(window).scrollTop() > 200) {
-      menu_area.addClass('sticky_navigation');
-  }else{ menu_area.removeClass('sticky_navigation');
-       }
-  });
-
-  $('a.smooth-menu').on("click", function(e) {
-    e.preventDefault();
-    var anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top - 50
-    }, 1000);
-    })
-  }
-</script>

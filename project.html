@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang=:"en">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav-area">
+      <div class="container">
+        <div class="main-menu">
+          <nav class="navbar ">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">My Photos</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                  <a href="#home" class="smooth-menu">Home</a>
+                </li>
+                <li class="active">
+                  <a href="#about" class="smooth-menu">About</a>
+                </li>
+                <li class="active">
+                  <a href="#project" class="smooth-menu">Project</a>
+                </li>
+                <li class="active">
+                  <a href="#Contact" class="smooth-menu">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="services-area section-padding" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header">
+                <h2>My Work</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="single-service"></div>
+              <h2>Descriptions</h2>
+              <p>
+                These 6 images below are images I took walking around the city.
+                When I first saw them I thought wow what an amazing place to
+                take this amazing shot. With some of them the way the lighting
+                was hitting that object in the picture really helped that object
+                really stand out . And with the others just the positioning of
+                things looked like it would make an amazing picture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio section-padding" id="profolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header">
+                <h2>One of my favorite works</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-5.jpg?v=1628645965284"
+                alt="favorite works"
+                class="img-fluid"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-4.jpg?v=1628645968531"
+                alt="favorite works"
+                class="img-fluid"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-3.jpg?v=1628645973052"
+                alt="favorite works"
+                class="img-fluid"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2FIMG_0146.jpeg?v=1628740729118"
+                alt="favorite works"
+                class="img-fluid"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed-1.jpg?v=1628645982839"
+                alt="favorite works"
+                class="img-fluid"
+                width="100%"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2Funnamed.jpg?v=1628645989021"
+                alt="favorite works"
+                class="img-fluid"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>All Right Reserverd by My Website</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+
+      $(window).on('scroll', function(){
+        var menu_area = $('nav-area');
+        if($(window).scrollTop() > 200) {
+          menu_area.addClass('sticky_navigation');
+      }else{ menu_area.removeClass('sticky_navigation');
+           }
+      });
+
+      $('a.smooth-menu').on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 50
+        }, 1000);
+        })
+      }
+    </script>
+  </body>
+</html>

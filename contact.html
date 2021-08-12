@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang=:"en">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav-area">
+      <div class="container">
+        <div class="main-menu">
+          <nav class="navbar ">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">My Photos</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                  <a href="#home" class="smooth-menu">Home</a>
+                </li>
+                <li class="active">
+                  <a href="#about" class="smooth-menu">About</a>
+                </li>
+                <li class="active">
+                  <a href="#project" class="smooth-menu">Project</a>
+                </li>
+                <li class="active">
+                  <a href="#Contact" class="smooth-menu">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="contact section-padding" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+              <div class="single-contact">
+                <form action="" class="form-horizontal">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Your Name"
+                  />
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Your Email"
+                  />
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter Your Query"
+                    rows="7"
+                  ></textarea>
+                  <button type="submit" class="btn btn=primary">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>All Right Reserverd by My Website</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+
+      $(window).on('scroll', function(){
+        var menu_area = $('nav-area');
+        if($(window).scrollTop() > 200) {
+          menu_area.addClass('sticky_navigation');
+      }else{ menu_area.removeClass('sticky_navigation');
+           }
+      });
+
+      $('a.smooth-menu').on("click", function(e) {
+        e.preventDefault();
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top - 50
+        }, 1000);
+        })
+      }
+    </script>
+  </body>
+</html>
