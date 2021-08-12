@@ -48,7 +48,13 @@ img {
   margin-bottom: 60px;
   text-align: center;
 }
-
+.section-header h2:before {
+  content: "{";
+  padding-right: 15px;
+}
+.section-header h2:after {
+  content: "}";
+  padding-left: 15px;
 }
 
 /*navbar*/
