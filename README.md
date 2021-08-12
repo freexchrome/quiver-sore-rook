@@ -19,7 +19,7 @@ captured these beauties.
 
 ← `contact.html`: This file is where i coded a section in website to contact me
 
-←`singlepage.html`:
+←`singlepage.html`: This file is like a backup file
 
 ← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
 
