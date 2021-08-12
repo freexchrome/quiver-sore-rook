@@ -186,11 +186,36 @@ img {
   color: #fff;
   display: inline-block;
   padding: 15px 25px;
-  border-radius
+  border-radius: 50px;
+  margin-top: 15px;
 }
 
+/*service*/
 
+.single-service{
+  text-align: center;
+}
 
+/*portfolio*/
+
+#portfolio img{
+  margin-bottom: 30px;
+}
+
+/*contact*/
+
+.single-contact input{
+  margin-bottom: 30px;
+}
+.single-contact button{
+  margin-top: 30px;
+}
+
+/*footer*/
+.footer{
+  background: #262626;
+  
+}
 
 
 
