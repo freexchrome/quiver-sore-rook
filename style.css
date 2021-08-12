@@ -135,9 +135,9 @@ img {
   background-size: cover;
   background-position: center center;
   position: relative;
-  height= 100%;
+  height: 100%;
 }
-.banner-table{
+.banner-table {
   display: table;
   margin: 0;
   position: relative;
@@ -146,22 +146,22 @@ img {
   z-index: 1;
 }
 
-.banner-table-cell{
+.banner-table-cell {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
 }
-.welcome-text h2{
+.welcome-text h2 {
   font-size: 3.8em;
   font-weight: 900;
   color: #262626;
   text-transform: uppercase;
 }
-.welcome-text h4{
+.welcome-text h4 {
   font-size: 45px;
   margin: 15px 0;
 }
-.banner-btn a{
+.banner-btn a {
   background: #ee5a4e;
   color: #fff;
   padding: 10px 35px;
@@ -172,8 +172,8 @@ img {
   letter-spacing: 2px;
 }
 
-@media (max-width: 991px){
-  .welcome-text{
+@media (max-width: 991px) {
+  .welcome-text {
     text-align: center;
     margin: 25px auto;
   }
@@ -181,7 +181,7 @@ img {
 
 /*about*/
 
-.about-text a{
+.about-text a {
   background: #ee5a4e;
   color: #fff;
   display: inline-block;
@@ -192,27 +192,27 @@ img {
 
 /*service*/
 
-.single-service{
+.single-service {
   text-align: center;
 }
 
 /*portfolio*/
 
-#portfolio img{
+#portfolio img {
   margin-bottom: 30px;
 }
 
 /*contact*/
 
-.single-contact input{
+.single-contact input {
   margin-bottom: 30px;
 }
-.single-contact button{
+.single-contact button {
   margin-top: 30px;
 }
 
 /*footer*/
-.footer{
+.footer {
   background: #262626;
   padding: 30px 0;
   color: #fff;
@@ -221,67 +221,46 @@ img {
 
 /*responsive*/
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-  .section-padding{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-padding {
     padding: 35px 0;
   }
-  .navbar-nav{
+  .navbar-nav {
     padding: 15px 0;
   }
-  .navbar-brand{
+  .navbar-brand {
     padding: 20px 0;
   }
-  .navbar-nav > li > a{
+  .navbar-nav > li > a {
     line-height: 0;
   }
-  .nav > li > a{
+  .nav > li > a {
     padding: 10px 8px;
- }
-  #about{
+  }
+  #about {
     text-align: center;
+  }
 }
+
+@media only screen and (max-width: 767px){
+  .section-padding{
+    padding: 30px 0;
+  }
+  .navbar-toggle .icon-bar{
+    background: #ee5a4e;
+  }
+  .navbar-nav{
+    float: right;
+    margin: 11px 21px;
+    margin-right: 32%;
+    display: inherit;
+    width: 200px;
+    text-align: center;
+    background-color:transparent;
+  }
+  .navbar-nav li{
+    float: left;
+    margin: 9px 50px;
+    display:
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
