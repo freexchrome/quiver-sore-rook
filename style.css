@@ -71,11 +71,31 @@ img {
   margin-bottom: 0;
   }
 .nav-area.sticky_navigation{
-  background: #
+  background: #fff;
+  height: 55px;
 }
-
-
-
+.sticky_navigation{
+  transition: all 0.4s ease-out;
+  box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.3);
+}
+.sticky_navigation .main-menu{
+  margin-top: 0;
+}
+.stick_navigation .navbar-brand{
+  color: #ee5a4e;
+}
+.sticky-navigation .navbar-brand:hover, .sticky-navigation .navbar-brand:focus{
+  color: #ee5a4e;
+}
+.sticky-navigation .nav li a{
+  color:#333;
+}
+.sticky-navigation .nav li.active a{
+  color:#262626;
+}
+.stick-navigation .navbar-brand:hover{
+  color:#
+}
 
 
 
