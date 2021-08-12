@@ -259,7 +259,7 @@ img {
   }
   .navbar-fixed-top .navbar-collapse {
     height: auto;
-    background-color: #rgba(0,0,0,0.9);
+    background-color: #rgba(0, 0, 0, 0.9);
   }
   .navbar-right li.active a {
     color: #fff;
