@@ -153,6 +153,89 @@ img {
 }
 .welcome-text h2{
   font-size: 3.8em;
-  
+  font-weight: 900;
+  color: #262626;
+  text-transform: uppercase;
 }
+.welcome-text h4{
+  font-size: 45px;
+  margin: 15px 0;
+}
+.banner-btn a{
+  background: #ee5a4e;
+  color: #fff;
+  padding: 10px 35px;
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 991px){
+  .welcome-text{
+    text-align: center;
+    margin: 25px auto;
+  }
+}
+
+/*about*/
+
+.about-text a{
+  background: #ee5a4e;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
