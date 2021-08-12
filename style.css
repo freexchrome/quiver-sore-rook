@@ -129,3 +129,30 @@ img {
   background: none;
 }
 
+.banner-area {
+  background-image: url(https://cdn.glitch.com/09b7bc2a-cbcd-42b1-aa94-83499ee4d3fd%2FScreen%20Shot%202021-08-09%20at%205.51.20%20PM.png?v=1628545973803);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height= 100%;
+}
+.banner-table{
+  display: table;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner-table-cell{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+.welcome-text h2{
+  font-size: 3.8em;
+  
+}
+
