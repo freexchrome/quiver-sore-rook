@@ -11,13 +11,13 @@ captured these beauties.
 
 ← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
 
-← `index.html`: 
+← `index.html`: This file is where I coded everything for the website
 
-← `about.html`:
+← `about.html`: This file is where I coded the part where i was talking about myself in the website
 
-← `project.html`:
+← `project.html`: This file is where i imported the images i wanted to put in my website
 
-← `contact.html`:
+← `contact.html`: This file is where i coded a section in website to contact me
 
 ←`singlepage.html`:
 
@@ -32,15 +32,6 @@ git branch -M main
 git remote add origin https://github.com/freexchrome/quiver-sore-rook.git
 git push -u origin main
 ```
-
-
-
-
-
-
-
-
-
 
 ## Git
 
